@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require File.expand_path("../../lib/hangman", __FILE__)
+
+
+game = Game.new
+game.play
+print "Submit test result?[Y/N]"
+submit = gets
+game.submit_result if submit.strip! == 'Y'
+
