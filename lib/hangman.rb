@@ -5,9 +5,9 @@ require File.expand_path("../words", __FILE__)
 class Game
   include Words
 
-  @@game_host = 'strikingly-interview-test.herokuapp.com'
+  @@game_host = 'test.herokuapp.com'
   @@game_url = '/guess/process'
-  @@user_id = 'mingwei.y@gmail.com'
+  @@user_id = 'test@gmail.com'
   @@http_header = {'Content-Type' => 'application/json'}
   @@words_file = File.expand_path("../../data/words.txt", __FILE__)
 
